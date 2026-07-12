@@ -1,0 +1,55 @@
+<section class="profile-links">
+
+<div class="container">
+
+<div class="heading">
+
+<p>Explore More</p>
+
+<h2>My Profile</h2>
+
+</div>
+
+<div class="grid">
+
+<a
+
+class="card"
+
+*ngFor="let item of links"
+
+[href]="item.url"
+
+target="_blank">
+
+<div class="icon">
+
+{{item.icon}}
+
+</div>
+
+<h3>
+
+{{item.title}}
+
+</h3>
+
+<p>
+
+{{item.subtitle}}
+
+</p>
+
+<span>
+
+Open →
+
+</span>
+
+</a>
+
+</div>
+
+</div>
+
+</section>

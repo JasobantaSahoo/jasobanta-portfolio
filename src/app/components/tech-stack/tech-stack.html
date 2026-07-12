@@ -1,0 +1,33 @@
+<section class="tech-stack">
+
+<div class="container">
+
+<div class="heading">
+
+<p>Technology</p>
+
+<h2>Tech Stack</h2>
+
+</div>
+
+<div class="grid">
+
+<div
+class="card"
+*ngFor="let tech of technologies">
+
+<i [class]="tech.icon"></i>
+
+<h3>
+
+{{tech.name}}
+
+</h3>
+
+</div>
+
+</div>
+
+</div>
+
+</section>

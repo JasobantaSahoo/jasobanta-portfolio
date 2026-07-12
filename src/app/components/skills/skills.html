@@ -1,0 +1,45 @@
+<section id="skills" class="skills">
+
+    <div class="container">
+
+        <div class="heading">
+
+            <p>My Expertise</p>
+
+            <h2>Skills</h2>
+
+        </div>
+
+        <div class="category"
+            *ngFor="let category of skillCategories">
+
+            <h3>
+
+                {{category.title}}
+
+            </h3>
+
+            <div class="skill-grid">
+
+                <div
+                    class="skill-card"
+                    *ngFor="let skill of category.skills"
+                    data-aos="zoom-in">
+
+                    <span class="icon">✓</span>
+
+                    <span>
+
+                        {{skill}}
+
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>

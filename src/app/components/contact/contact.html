@@ -1,0 +1,27 @@
+<section id="contact" class="contact">
+  <div class="container">
+    <div class="heading">
+      <p>Let's Connect</p>
+
+      <h2>Contact Me</h2>
+    </div>
+
+    <div class="contact-grid">
+      <div class="card" *ngFor="let item of contacts" data-aos="zoom-in-up">
+        <div class="icon">
+          {{ item.icon }}
+        </div>
+
+        <h3>
+          {{ item.title }}
+        </h3>
+
+        <p>
+          {{ item.value }}
+        </p>
+
+        <a [target]="'_blank'" [href]="item.link"> Open → </a>
+      </div>
+    </div>
+  </div>
+</section>

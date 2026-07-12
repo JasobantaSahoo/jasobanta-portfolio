@@ -1,0 +1,49 @@
+<section class="achievements">
+
+    <div class="container">
+
+        <div class="heading">
+
+            <p>Highlights</p>
+
+            <h2>Achievements</h2>
+
+        </div>
+
+        <div class="grid">
+
+            <div
+            class="card"
+            *ngFor="let item of achievements">
+
+                <div class="icon">
+
+                    {{item.icon}}
+
+                </div>
+
+                <h3>
+
+                    {{item.title}}
+
+                </h3>
+
+                <h1>
+
+                    {{item.value}}
+
+                </h1>
+
+                <p>
+
+                    {{item.description}}
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
