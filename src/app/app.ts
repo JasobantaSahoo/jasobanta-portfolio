@@ -39,7 +39,7 @@ export class App implements OnInit{
 
     this.loading=false;
 
-    },250);
+    },2500);
 
   }
   
