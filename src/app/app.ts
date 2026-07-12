@@ -3,6 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import AOS from 'aos';
 import { LoaderComponent } from './components/loader/loader';
 import { CommonModule } from '@angular/common';
+import { Signal } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -22,7 +23,7 @@ export class App implements OnInit{
    
   }
 
-  loading=true;
+  loading= signal(true);
 
   private aos_thing(): void
   {
@@ -37,7 +38,7 @@ export class App implements OnInit{
   { 
     setTimeout(()=>{
 
-    this.loading=false;
+    this.loading.set(false);
 
     },2500);
 

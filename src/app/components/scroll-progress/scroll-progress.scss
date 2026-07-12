@@ -19,3 +19,38 @@ z-index:99999;
 transition:width .15s linear;
 
 }
+
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 5px;
+  z-index: 99999;
+
+  background: linear-gradient(
+    90deg,
+    #3b82f6,
+    #06b6d4,
+    #8b5cf6,
+    #ec4899
+  );
+
+  background-size: 300% 100%;
+  animation: gradientMove 3s linear infinite;
+
+  box-shadow:
+    0 0 10px #3b82f6,
+    0 0 20px #06b6d4,
+    0 0 30px #8b5cf6;
+
+  border-radius: 20px;
+}
+
+@keyframes gradientMove {
+  from {
+    background-position: 0%;
+  }
+  to {
+    background-position: 300%;
+  }
+}

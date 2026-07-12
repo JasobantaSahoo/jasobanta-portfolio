@@ -2,36 +2,38 @@
 
 position:fixed;
 
-top:90px;
+top:100px;
 
 right:25px;
 
-width:55px;
+width:60px;
 
-height:55px;
-
-border-radius:50%;
+height:60px;
 
 border:none;
 
+border-radius:50%;
+
 cursor:pointer;
 
-font-size:24px;
+font-size:26px;
 
-background:#3B82F6;
+background:var(--primary);
 
 color:white;
 
-box-shadow:0 10px 25px rgba(0,0,0,.3);
+box-shadow:0 10px 30px rgba(0,0,0,.3);
+
+transition:.35s ease;
 
 z-index:999;
-
-transition:.3s;
 
 }
 
 .theme-btn:hover{
 
-transform:rotate(180deg) scale(1.08);
+transform:scale(1.1) rotate(180deg);
+
+box-shadow:0 0 20px var(--primary);
 
 }
